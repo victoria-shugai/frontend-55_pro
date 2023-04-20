@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, td {
+
+          border: 1px solid black;
+          color: white;
+        }
+        tr:nth-child(even) {
+          background: coral;
+        }
+        tr:nth-child(odd) {
+          background: crimson;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <script>
+      /*let userName = prompt ("Введите логин:");
+        
+        let userPass = prompt ("Введите пароль:");
+          if (userPass == "123321") {
+            alert ("Добро пожаловать!");
+          } else if (userPass == null) {
+            alert ("Вход отменен!");
+          } else {
+            alert ("Пароль неверен");
+          }
+
+      if (userName == "Админ") {
+
+          
+      } else if (userName == null) {
+          alert ("Вход отменен!");
+      } else {
+        alert ("Пользователь не найден");
+      }*/
+    </script>
+
+    <script>
+ 
+            //2 способа найти четные числа
+      for( i=2; i<=10; i+=2) {
+        console.log(i);
+      }
+
+      for (i=1; i<=10; i++) {
+        if (i % 2 == 0) console.log (i);
+      }
+          //нечетные
+
+          for (i=11; i>=1; i-=2) {
+            console.log(i);
+          }
+
+          for (i=11; i>=1; i--) {
+            if (i % 2 !=0) console.log (i);
+          }
+    </script>
+
+
+    <div id="box">
+      <!--<img src="images/1.jpg" style="border:15px solid green">;-->
+    </div>
+    <script>
+
+      /*let n = 1;
+      while (n<=11) {
+
+        if (n % 2 == 0)
+          box.innerHTML += `<img src="images/${n}.jpg" style="border:15px solid green">`;
+          n++;
+          else box.innerHTML += `<img src="images/${n}.jpg" style="border:15px solid green">`;
+          n++;
+          
+      }*/
+
+    </script>
+
+      <div id="box"></div>
+      <!--<table>
+          <tbody>
+
+              <tr>
+                  <td>Ячейка 1</td>
+                  <td>Ячейка 2</td>
+                  <td>Ячейка 3</td>
+                
+              </tr>
+              <tr>
+                <td>Ячейка 1</td>
+                <td>Ячейка 2</td>
+                <td>Ячейка 3</td>
+              
+            </tr>
+            <tr>
+              <td>Ячейка 1</td>
+              <td>Ячейка 2</td>
+              <td>Ячейка 3</td>
+            
+          </tr>
+          </tbody>
+
+      </table>-->
+    </div>
+    <script>
+
+      let rows = +prompt ("Сколько строк?");
+      let columns = +prompt ("Сколько столбцов?");
+
+      let myTable = "";
+      let count = 1;
+
+      for (i=1; i<=rows; i++) {
+
+        myTable += "<tr>";
+
+          for(j=1; j<=columns; j++) {
+
+            myTable += `<td><a href ="link1.html">link${count++}.html</a></td>`;
+          }
+
+        myTable += "</tr>";
+
+      }
+      myTable = `<table>
+                 <tbody>;
+                 ${myTable}
+                </tbody>
+                </table>`;
+
+      //console.log(myTable);
+
+      box.innerHTML = myTable;
+
+
+    </script>
+</body>
+</html>
